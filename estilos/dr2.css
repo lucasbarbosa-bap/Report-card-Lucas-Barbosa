@@ -1,5 +1,5 @@
 :root {
-    --dr2-roxo-principal: #B080F2;
+    --dr2-roxo-principal: #8B63BC;
     --dr2-cinza-tabela: #4E5051;
     --dr2-fundo-escuro: #502E59;
     --dr2-rosa-mikan: #D9A9D1;
@@ -10,4 +10,66 @@
     --fonte-dr2: 'Courier New', Courier, monospace;
 }
 
-h1 {color: var(--dr2-rosa-mikan);}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1000px;
+    max-height: 650px;
+
+    margin: 10px;
+
+    background-color: var(--dr2-preto);
+}
+
+figure img{ height: 500px;}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 5px;
+}
+
+ul li{
+    background-color: var(--dr2-cinza-tabela);
+}
+
+div.minhas_contas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+div.minhas_contas a{
+    background-color: var(--dr2-cinza-tabela);
+}
+
+div.SLA{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+h1 {
+    color: var(--dr2-rosa-mikan);
+    background-color: var(--dr2-roxo-principal);
+}
+p{
+    color: var(--dr2-texto-claro);
+    background-color: var(--dr2-cinza-tabela);
+    margin-bottom: 5px;
+}
+
+h2, h3, a, li{
+    color: var(--dr2-texto-claro);
+    background-color: var(--dr2-roxo-principal);
+    margin-bottom: 5px;
+}
