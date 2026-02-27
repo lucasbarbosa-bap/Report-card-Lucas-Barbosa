@@ -26,17 +26,54 @@ body{
     background-color: var(--dr2-preto);
 }
 
-figure img{ height: 500px;}
-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+h1 {
+    color: var(--dr2-rosa-mikan);
+    background-color: var(--dr2-roxo-principal);
+
+    margin-bottom: 5px;
 }
 
-ul{
+p{
+    color: var(--dr2-texto-claro);
+    background-color: var(--dr2-cinza-tabela);
+    margin-bottom: 5px;
+}
+
+h2, h3, a, li{
+    color: var(--dr2-texto-claro);
+    background-color: var(--dr2-roxo-principal);
+    margin-bottom: 5px;
+}
+
+figure img{ 
+    height: 100%;
+    object-fit: cover;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    padding: 5px 0;
+
+    border-top: 5px solid var(--dr2-roxo-principal);
+    border-bottom: 5px solid var(--dr2-roxo-principal);
+}
+
+div.gosto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 5px;
+}
+div.não_gosto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 5px;
+}
+
+
+ul{
+    list-style: none;
 }
 
 ul li{
@@ -58,18 +95,38 @@ div.SLA{
     gap: 5px;
 }
 
-h1 {
-    color: var(--dr2-rosa-mikan);
-    background-color: var(--dr2-roxo-principal);
-}
-p{
-    color: var(--dr2-texto-claro);
-    background-color: var(--dr2-cinza-tabela);
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+    border-bottom: 5px solid var(--dr2-roxo-principal);
     margin-bottom: 5px;
+}
+nav ul li{
+    margin-bottom: 0;
 }
 
-h2, h3, a, li{
+nav a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--dr2-cinza-tabela);
     color: var(--dr2-texto-claro);
-    background-color: var(--dr2-roxo-principal);
-    margin-bottom: 5px;
+    padding: 5px 0;
+    margin-bottom: 0; 
+    height: 100%;
+
+    border-bottom: 5px solid var(--dr2-preto); 
 }
+
+nav a.ativo {
+    background-color: var(--dr2-roxo-principal);
+    border-bottom: 5px solid var(--dr2-roxo-principal);
+    border-spacing: 0;
+}
+
+/*nav ul li:first-child a{
+    background-color: var(--dr2-roxo-principal);
+}*/
+
+
