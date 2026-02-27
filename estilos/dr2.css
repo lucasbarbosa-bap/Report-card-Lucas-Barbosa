@@ -1,0 +1,13 @@
+:root {
+    --dr2-roxo-principal: #B080F2;
+    --dr2-cinza-tabela: #4E5051;
+    --dr2-fundo-escuro: #502E59;
+    --dr2-rosa-mikan: #D9A9D1;
+    
+    --dr2-texto-claro: #FFFFFF;
+    --dr2-preto: #060C0F; 
+    
+    --fonte-dr2: 'Courier New', Courier, monospace;
+}
+
+h1 {color: var(--dr2-rosa-mikan);}
